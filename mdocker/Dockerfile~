@@ -1,0 +1,6 @@
+FROM kyma/docker-nginx
+COPY mysore/ /var/www
+CMD chown -R root.root /var/www
+CMD chmod -R 775 /var/www
+CMD service nginx start
+
